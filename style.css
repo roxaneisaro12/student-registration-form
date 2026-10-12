@@ -1,4 +1,4 @@
-```css
+
 * {
     box-sizing: border-box;
 }
@@ -38,14 +38,28 @@ label {
     color: #333;
 }
 
-input {
+input,
+select {
+    display: block;
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cbd5e1;
     border-radius: 6px;
     font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
 
 input:focus {
     outline: 2px solid #6366f1;
@@ -66,4 +80,3 @@ button {
 button:hover {
     background-color: #3730a3;
 }
-```
